@@ -1,4 +1,4 @@
-.background{
+lr.background{
   background-image: url('./pics/afr.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -9,7 +9,7 @@
 
 .buff{
   display: block;
-  
+
 }
 
 .test{

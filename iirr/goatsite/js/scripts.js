@@ -1,28 +1,45 @@
-window.sr = ScrollReveal();
 
-var testReveal = {
-  delay    : 200,
-  distance : '90px',
-  easing   : 'ease-in-out',
-  rotate   : { z: 10 },
-  scale    : 1.1
-};
+( function( $ ) {
 
+	// Setup variables
+	$window = $(window);
+	$slide = $('.homeSlide');
+	$body = $('body');
 
-function setScroll(){
-  $(window).scroll(function(e){
-    $('.background').css('top', $(window).scrollTop()+'px')
-  })
-}
+  //   //FadeIn all sections
+	$body.imagesLoaded( function() {
+		setTimeout(function() {
 
+		      // Resize sections
+		      adjustWindow();
 
+		      // Fade in sections
+			  $body.removeClass('loading').addClass('loaded');
 
+		}, 800);
+	});
 
+	function adjustWindow(){
 
+		// Init Skrollr
+		var s = skrollr.init({
+		    forceHeight: false
+		});
 
-$(function(){
-  sr.reveal('.test', testReveal)
-  setScroll()
+		// Get window size
+	    winH = $window.height();
 
+	    // Keep minimum height 550
+	    if(winH <= 550) {
+			winH = 550;
+		}
 
-})
+	    // Resize our slides
+	    $slide.height(winH);
+
+	    // Refresh Skrollr after resizing our sections
+	    s.refresh($('.homeSlide'));
+
+	}
+
+} )( jQuery );
