@@ -1,0 +1,23 @@
+.background{
+  background-image: url('./pics/afr.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 750px;
+  display: block;
+  position: relative;
+}
+
+.buff{
+  display: block;
+  
+}
+
+.test{
+  text-align: center;
+  color: red;
+}
+
+.one{
+  height: 750px;
+  display: none;
+}
