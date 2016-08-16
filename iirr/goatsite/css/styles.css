@@ -2,4 +2,16 @@
   height: 200px;
   width: 200px;
   opacity: 0.6;
+  margin-bottom: 175px;
+}
+
+.logoText {
+  display: flex;
+  font-size: 1em;
+  width: 750px;
+  text-align: center;
+  margin-top: 450px;
+  margin-left: 14em;
+  margin-bottom: 30px;
+  color: white;
 }

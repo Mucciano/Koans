@@ -169,12 +169,13 @@ main {
 }
 	.hsContent h2  {
 		color: #fff8de;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(0,0,0,0.0);
 		padding: 10px 5px;
-		font-size: 35px;
+		font-size: 30px;
 		line-height: 38px;
 		margin-bottom: 12px;
 	}
+
 	.hsContent p {
 		width: 400px;
 		color: #b2b2b2;
